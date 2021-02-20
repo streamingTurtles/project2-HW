@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-4">Burger Town</h1>
+    <p class="lead">Won't you take me to BurgerTown?</p>
+  </div>
+  <img src="../assets/img/Burger_Town_logo_MW2.png" style="width:20rem" alt="A picture of a juicy" />
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="card text-center" style="width:30rem">
+      <div class="col-lg-6">
+        <img src="../assets/img/juicyburger.jpg" class="card-img-top" alt="A picture of a juicy" />
+        <div class="card-body">
+          <h2>Burger is Saved</h2>
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block }}
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="card" style="width: 30rem">
+      <div class="col-lg-6">
+        <img src="../assets/img/JuicyHamburgers7.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h2>Burger is Devoured!</h2>
+
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block }}
+            {{/if}}
+            {{/each}}
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Eat a Burger</h2>
+<form id="create-form">
+
+  <div class="form-group">
+    <p>Type a burger</p>
+    <label for="br">Burger:</label>
+
+    <input type="text" id="br" name="name">
+    <button type="submit">Add Burger</button>
+  </div>
+
+
+
+</form>
