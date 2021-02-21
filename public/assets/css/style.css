@@ -1,0 +1,29 @@
+.nav{
+    margin-left: 2%;
+    width: 100vw;
+}
+
+#jumbo{
+    height: 25vh;
+    width: 100vw;
+    margin-top: 0%;
+    margin-left: 0%;
+    background-color: yellow;
+    text-align: center;
+    padding-top: 50px;
+}
+.container{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.card-header{
+    text-align: center;
+}
+
+.btn{
+    float: right;
+}
