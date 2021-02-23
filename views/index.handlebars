@@ -1,139 +1,162 @@
-<ul class="nav nav-pills">
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Choose a Different Restaurant</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">McDonald's</a>
-      <a class="dropdown-item" href="#">The Ramen Room</a>
-      <a class="dropdown-item" href="#">It's Nice Sushi You</a>
-      <a class="dropdown-item" href="#">Taco Bell</a>
-    </div>
+{{!-- PAC - ADDED HREF LINK/ROUTE TO LOGIN PAGE --}}
+{{!-- login link route  --}}
+<a href="/page1_login">login</a>
+{{!-- <button onclick="homePage">login</button>
+<script>
+  homePage(){
+    window.location = '/page1_login'
+  }
+</script> --}}
+
+
+
+{{!-- PAC - EDITED, LINE UP CARDS FOR BLOCK DISPLAY  --}}
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Ramen Room</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">It's Nice Sushi You</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Taco Bell</a>
   </li>
 </ul>
 
+<div>
+    <div class="row" style = "display: inline-block;">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-4" id="jumbo">Welcome to <span>McDonald's</span></h1> 
+        </div>
+      </div>
+    </div>
+</div>
+
+  
+    <div  style = "display: inline-block;">
+    	<div class="col-sm-3" id="line1">
+    	  <div class="card" style="width: 18rem;">
+    	    <div class="card-header">Burgers</div>
+    	      <ul class="list-group list-group-flush">
+    	        <li class="list-group-item">Big Mac<button type="button" class="btn btn-outline-danger">Add!</li>
+    	        <li class="list-group-item">Quarter Pounder<button type="button" class="btn btn-outline-danger">Add!</li>
+    	        <li class="list-group-item">Double Quarter Pounder<button type="button" class="btn btn-outline-danger">Add!</li>
+    	        <li class="list-group-item">McDouble<button type="button" class="btn btn-outline-danger">Add!</li>
+    	        <li class="list-group-item">Cheeseburger<button type="button" class="btn btn-outline-danger">Add!</li>
+    	        <li class="list-group-item">Hamburger<button type="button" class="btn btn-outline-danger">Add!</li>
+    	      </ul>
+    	    </div>
+    	  </div>
+    	</div>
+    </div>      
+    
+
+
+  <div  style = "display: inline-block;">
+    <div class="col-sm-3" id="line">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">Drinks</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Coca-Cola<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Sprite<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Dr. Pepper<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Iced Tea<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Dasani Water<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">McCafe Latte<button type="button" class="btn btn-outline-danger">Add!</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+  <div  style = "display: inline-block;">
+    <div class="col-sm-3" id="line">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">Chicken</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Crispy Chicken Sandwich<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">6 Piece McNugget<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">4 Piece McNugget<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">10 Piece McNugget <button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Spicy McNuggets<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">McChicken<button type="button" class="btn btn-outline-danger">Add!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div  style = "display: inline-block;">
+    <div class="col-sm-3" id="line">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">Desserts</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Apple Fritter<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Blueberry Muffin<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Cinnamon Roll<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Baked Apple Pie<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Chocolate Chip Cookie<button type="button" class="btn btn-outline-danger">Add!</li>
+            <li class="list-group-item">Brownie<button type="button" class="btn btn-outline-danger">Add!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <div class="row">
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4" id="jumbo">Welcome to McDonald's, {{firstName}}</h1>
-    </div>
+  <div style="float: left;">
+      <div class="personalNote">
+        <form id="create-form">
+        
+          <div class="form-group">
+            <label for="ca">Add a Personal Note to your Order:</label>
+            <input type="text" id="ca" class="textarea" name="burger_name">
+          </div>
+        
+          <div class="form-group">
+            <label for="devoured">Who is your note for?</label><br>
+            <input type="radio" name="devoured" value="1" id="devoured" checked> To: The Kitchen<br>
+            <input type="radio" name="devoured" value="0" id="not-eaten"> To: The Delivery Service
+          </div>
+        
+          <button type="submit">Submit!</button>
+        </form>
+      </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
+<h1 style="text-align:center">Your Order:</h1>
 
-      <div class="col-sm-3" id="line1">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header">Burgers</div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Big Mac<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Quarter Pounder<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Double Quarter Pounder<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">McDouble<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Cheeseburger<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Hamburger<button type="button" class="btn btn-outline-danger">Add!</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3" id="line2">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header">Drinks</div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Coca-Cola<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Sprite<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Dr. Pepper<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Iced Tea<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Dasani Water<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">McCafe Latte<button type="button" class="btn btn-outline-danger">Add!</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3" id="line3">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header">Chicken</div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Crispy Chicken Sandwich<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">6 Piece McNugget<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">4 Piece McNugget<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Spicy McNuggets<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">McChicken<button type="button" class="btn btn-outline-danger">Add!</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3" id="line4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header">Desserts</div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Apple Fritter<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Blueberry Muffin<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Cinnamon Roll<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Baked Apple Pie<button type="button" class="btn btn-outline-danger">Add!</li>
-              <li class="list-group-item">Chocolate Chip Cookie<button type="button" class="btn btn-outline-danger">Add!</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-  </div>
-</div>
-
-
-{{!-- <div class="container">
-  <div class="row">
-    <div class="card text-center" style="width:30rem">
-      <div class="col-lg-6">
-        <img src="../assets/img/juicyburger.jpg" class="card-img-top" alt="A picture of a juicy" />
-        <div class="card-body">
-          <h2>Burger is Saved</h2>
-          <ul>
-            {{#each burgers}}
-            {{#unless devoured}}
-            {{> burgers/burger-block }}
-            {{/unless}}
-            {{/each}}
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="card" style="width: 30rem">
-      <div class="col-lg-6">
-        <img src="../assets/img/JuicyHamburgers7.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h2>Burger is Devoured!</h2>
-
-          <ul>
-            {{#each burgers}}
-            {{#if devoured}}
-            {{> burgers/burger-block }}
-            {{/if}}
-            {{/each}}
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </div>
+{{!-- <div style="float: left;">
+    <h2>Burgers that you can EAT!</h2>
+    
+    <ul>
+      {{#each burgers}}
+      {{#unless devoured}}
+      {{> burgers/burger-block eaten=true}}
+      {{/unless}}
+      {{/each}}
+    </ul>
 </div> --}}
 
-<h2>Eat a Burger</h2>
-<form id="create-form">
 
-  <div class="form-group">
-    <p>Type a burger</p>
-    <label for="br">Burger:</label>
-
-    <input type="text" id="br" name="name">
-    <button type="submit">Add Burger</button>
-  </div>
+  
 
 
-</form>
+<div class="ordercontainer">
+  <a href="#" id="submitBtn" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Submit Order</a>
+
+</div>
+
+
+{{!-- <div style="float: left;">
+    <h2>Burgers that you ATE!</h2>
+    
+    <ul>
+      {{#each burgers}}
+      {{#if devoured}}
+      {{> burgers/burger-block eaten=false}}
+      {{/if}}
+      {{/each}}
+    </ul>
+</div> --}}
