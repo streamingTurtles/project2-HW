@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
 const addButtons = document.querySelectorAll(".add-buttons");
-
 addButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     //put the server code here
@@ -15,6 +14,7 @@ addButtons.forEach((button) => {
   })
 })
 
+const submitNote = document.querySelector(".textarea");
 
 
 
@@ -23,13 +23,8 @@ addButtons.forEach((button) => {
 
 
 
-
-
-
-  const deleteBurgerBtns = document.querySelectorAll(".delete-burger");
-
-  // Set up the event listeners for each delete button
-  deleteBurgerBtns.forEach((button) => {
+const deleteBurgerBtns = document.querySelectorAll(".delete-burger");
+deleteBurgerBtns.forEach((button) => {
     button.addEventListener("click", (e) => {
       const id = e.target.getAttribute("data-id");
 
