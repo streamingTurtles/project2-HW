@@ -6,24 +6,47 @@
     window.location = '/'
   }
 </script> --}}
+{{!-- font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Stick', sans-serif;
+font-family: 'Vidaloka', serif; --}}
 
 <style>
-  .b-img {
-    background-image: url("eat.png");
+  body {
+    background-image: url("fast.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    height: 600px;
   }
 
-  .fas,
-  .lead,
-  .display-4,
-  #sign {
+  #titl-1,
+  .fas {
     color: whitesmoke;
-    font-family: 'Stick', sans-serif;
+    font-family: 'Vidaloka', serif;
   }
+
+  #par {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  #sign {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 26%;
+    text-decoration: none;
+  }
+
+  .row {
+    margin-top: 100px;
+  }
+
+  .jumbotron {
+    text-align: center;
+  }
+
 
   .footer {
     position: fixed;
@@ -35,40 +58,43 @@
     text-align: center;
   }
 </style>
-<div class="b-img">
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container col-md-6 mx-auto">
-      <h1 class="display-4">Welcome to yourEats!</h1>
-      <i class="fas fa-hamburger fa-10x"></i>
-      <p class="lead">Where We're Always in the Mood for Food</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 mx-auto">
-      <div class="card card-body">
-        <h3 class="text-center">
-          Login
-        </h3>
-        <form action="/users/login" method="post">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" name="password" required>
-          </div>
-          <button type="submit" class="btn btn-secondary">Submit</button>
-        </form>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <div class="jumbotron jumbotron-fluid">
+          <h1 id="titl-1" class="display-4">Welcome to yourEats!</h1>
+          <p id="par" class="lead">Where We're Always in the Mood for Food</p>
+          <i class="fas fa-hamburger fa-10x"></i>
+
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="card card-body">
+          <h3 class="text-center">
+            Login
+          </h3>
+          <form action="/users/login" method="post">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
+    <div>
+      <h5 id="sign" class="text-center">
+        New User? Please <a href="/users/register">sign up <i class="fa fa-external-link-square"
+            aria-hidden="true"></i></a>
+        to register
+      </h5>
+    </div>
   </div>
-  <hr>
-  <div>
-    <h5 id="sign" class="text-center">
-      New User? Please <a href="/users/register">sign up <i class="fa fa-external-link-square"
-          aria-hidden="true"></i></a>
-      to register
-    </h5>
-  </div>
-</div>
+</body>
