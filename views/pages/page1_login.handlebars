@@ -1,4 +1,3 @@
-<a href="/">homepage</a>
 {{!--
 <button onclick="homePage">logout</button>
 <script>
@@ -30,30 +29,61 @@ font-family: 'Vidaloka', serif; --}}
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
 
+
   }
 
   #sign {
     text-align: center;
-    color: whitesmoke;
-    margin-top: 26%;
+    color: #495057;
+    margin-top: 25%;
     text-decoration: none;
-  }
-
-  .row {
-    margin-top: 100px;
+    color
   }
 
   .jumbotron {
     text-align: center;
+    margin-top: 125px;
   }
 
+  .card {
+    margin-top: 125px;
+    color: #495057;
+
+
+  }
+
+  #login-btn {
+    background-color: white;
+    color: #495057;
+    float: left;
+    margin-top: 5%;
+
+  }
+
+  #login-btn:hover {
+    background-color: #495057;
+    color: white;
+    transform: scale(1.2);
+  }
+
+  a {
+    color: #495057;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: #495057;
+    color: white;
+  }
 
   .footer {
+    padding-top: .8%;
+    font-family: 'Montserrat', sans-serif;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: #c1121f;
     color: white;
     text-align: center;
   }
@@ -84,17 +114,17 @@ font-family: 'Vidaloka', serif; --}}
               <label for="password">Password</label>
               <input type="password" class="form-control" name="password" required>
             </div>
-            <button type="submit" class="btn btn-secondary">Submit</button>
+            <button id="login-btn" type="submit" class="btn btn-secondary"><a href="/">Login</a></button>
+            <div <h5 id="sign" class="text-center">
+              New User? Please <a href="/users/register">sign up <i class="fa fa-external-link-square"
+                  aria-hidden="true"></i></a>
+              to register
+              </h5>
+            </div>
           </form>
         </div>
       </div>
     </div>
-    <div>
-      <h5 id="sign" class="text-center">
-        New User? Please <a href="/users/register">sign up <i class="fa fa-external-link-square"
-            aria-hidden="true"></i></a>
-        to register
-      </h5>
-    </div>
+
   </div>
 </body>
