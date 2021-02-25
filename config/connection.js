@@ -27,7 +27,7 @@ if (process.env.JAWSDB_URL) {
     // user: 'root',
     // password: 'xxx',
     user: "root",
-    password: "Dre525252",
+    password: process.env.SECPASSWORD,
     database: "burgers_db",
   });
 }
