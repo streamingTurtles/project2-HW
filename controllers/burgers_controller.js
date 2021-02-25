@@ -39,6 +39,10 @@ router.get("/page2_restaurant", (req, res) => {
   console.log("feed me");
   res.render("pages/page2_restaurant");
 });
+router.get("../view/layouts/main.handlebars", (req, res) => {
+  console.log("feed me");
+  res.render("../view/layouts/main.handlebars");
+});
 
 router.post("/api/burgers", (req, res) => {
   burger.create(
