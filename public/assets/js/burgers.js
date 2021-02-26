@@ -14,8 +14,14 @@ addButtons.forEach((button) => {
   })
 })
 
-const submitNote = document.querySelector(".textarea");
+const submitNote = document.querySelector(".submitBtn");
+if (submitNote){
+  submitNote.addEventListener('submit', (e) => {
+    e.preventDefault();
 
+    const newNote
+  })
+}
 
 
 
