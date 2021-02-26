@@ -4,7 +4,6 @@
 }
 
 /* .nav {
-
   margin-left: 2%;
   width: 100vw;
 } */
@@ -20,8 +19,11 @@
 }
 .mick {
   background-image: url("../img/fast.png");
-  background-position: left center;
-  margin-bottom: 3rem;
+  background-position: right center;
+  margin-bottom: 1rem;
+}
+ul {
+  margin-bottom: 1rem;
 }
 /* left top
 left center
