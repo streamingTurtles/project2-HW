@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Import the model burger.js to its object methods to interact with the database
 const burger = require("../models/burger.js");
-const login = require("../models/login.js");
+const login = require("../public/assets/js/login.js");
 
 // Testing code to the front End - working!
 // router.get('/', function(req, res) {
@@ -26,9 +26,9 @@ router.get("/", (req, res) => {
 
 // PAC 02/21,22/2021 - adding login/logout route page/s
 // Login
-router.get("/page1_login", (req, res) => {
+router.get("/page1_signup", (req, res) => {
   console.log("log me in");
-  res.render("pages/page1_login");
+  res.render("pages/page1_signup");
 });
 // Logout
 router.get("/logout", (req, res) => {
@@ -36,12 +36,23 @@ router.get("/logout", (req, res) => {
 });
 //restaurant selection
 router.get("/page2_restaurant", (req, res) => {
-  console.log("feed me");
+  console.log("im hungry");
   res.render("pages/page2_restaurant");
 });
-router.get("../view/layouts/main.handlebars", (req, res) => {
+// router.get("../view/layouts/main.handlebars", (req, res) => {
+//   console.log("feed me");
+//   res.render("../view/layouts/main.handlebars");
+// });
+// checkout food
+router.get("/page3_checkout", (req, res) => {
   console.log("feed me");
-  res.render("../view/layouts/main.handlebars");
+  res.render("pages/page3_checkout");
+});
+
+//sign in
+router.get("/index", (req, res) => {
+  console.log("Sign in");
+  res.render("index");
 });
 
 router.post("/api/burgers", (req, res) => {
