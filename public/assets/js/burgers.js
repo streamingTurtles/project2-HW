@@ -18,8 +18,6 @@ const submitNote = document.querySelector(".submitBtn");
 if (submitNote){
   submitNote.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    const newNote
   })
 }
 
