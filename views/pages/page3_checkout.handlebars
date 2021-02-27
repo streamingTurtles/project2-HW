@@ -1,0 +1,189 @@
+{{!-- PAC - ADDED HREF LINK/ROUTE TO LOGIN PAGE --}}
+{{!-- login link route --}}
+{{!-- <a href="/page1_login">login</a> --}}
+{{!-- <button onclick="homePage">login</button>
+<script>
+    homePage(){
+        { { !--window.location = '/page3' -- } }
+    }
+</script> --}}
+
+<div class="mick">
+    <div class="row" style="display: inline-block;">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4" id="jumbo">Welcome to <span>McDonald's</span></h1>
+            </div>
+        </div>
+        {{!-- <a href="/page1_login">login</a> --}}
+    </div>
+</div>
+<!-- start nav -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">yourEats</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">McDonald's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ramen Room</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sushi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Taco Bell</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-door-open"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- end nav -->
+{{!-- <ul class="nav justify-content-end">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Ramen Room</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">It's Nice Sushi You</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Taco Bell</a>
+    </li>
+</ul> --}}
+
+<div style="display: inline-block;">
+    <div class="col-sm-3" id="line1">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">Burgers</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Big Mac<button data-name="Big Mac" type="button"
+                        class="btn btn-outline-danger add-buttons">$3.99</li>
+                <li class="list-group-item">Quarter Pounder<button data-name="Quarter Pounder" type="button"
+                        class="btn btn-outline-danger add-buttons">$5.99</li>
+                <li class="list-group-item">Double Quarter Pounder<button data-name="Double Quarter Pounder"
+                        type="button" class="btn btn-outline-danger add-buttons">$6.99</li>
+                <li class="list-group-item">McDouble<button data-name="McDouble" type="button"
+                        class="btn btn-outline-danger add-buttons">$3.00</li>
+                <li class="list-group-item">Cheeseburger<button data-name="Cheeseburger" type="button"
+                        class="btn btn-outline-danger add-buttons">$2.50</li>
+                <li class="list-group-item">Hamburger<button data-name="Hamburger" type="button"
+                        class="btn btn-outline-danger add-buttons">$2.00</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div style="display: inline-block;">
+    <div class="col-sm-3" id="line">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">Drinks</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Coca-Cola<button data-name="Coca-Cola" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+                <li class="list-group-item">Sprite<button data-name="Sprite" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+                <li class="list-group-item">Dr. Pepper<button data-name="Dr. Pepper" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+                <li class="list-group-item">Iced Tea<button data-name="Iced Tea" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+                <li class="list-group-item">Dasani Water<button data-name="Dasani Water" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+                <li class="list-group-item">McCafe Latte<button data-name="McCafe Latte" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div style="display: inline-block;">
+    <div class="col-sm-3" id="line">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">Chicken</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Crispy Chicken Sandwich<button data-name="Crispy Chicken Sandwich"
+                        type="button" class="btn btn-outline-danger add-buttons">$4.49</li>
+                <li class="list-group-item">6 Piece McNugget<button data-name="6 Piece McNugget" type="button"
+                        class="btn btn-outline-danger add-buttons">$4.99</li>
+                <li class="list-group-item">4 Piece McNugget<button data-name="4 Piece McNugget" type="button"
+                        class="btn btn-outline-danger add-buttons">$3.50</li>
+                <li class="list-group-item">10 Piece McNugget<button data-name="10 Piece McNugget" type="button"
+                        class="btn btn-outline-danger add-buttons">$6.49</li>
+                <li class="list-group-item">Spicy McNuggets<button data-name="Spicy McNuggets" type="button"
+                        class="btn btn-outline-danger add-buttons">$6.49</li>
+                <li class="list-group-item">McChicken<button data-name="McChicken" type="button"
+                        class="btn btn-outline-danger add-buttons">$5.00</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div style="display: inline-block;">
+    <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">Desserts</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Apple Fritter<button data-name="Apple Fritter" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+                <li class="list-group-item">Blueberry Muffin<button data-name="Blueberry Muffin" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+                <li class="list-group-item">Cinnamon Roll<button data-name="Cinnamon Roll" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.50</li>
+                <li class="list-group-item">Baked Apple Pie<button data-name="Baked Apple Pie" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+                <li class="list-group-item">Chocolate Chip Cookie<button data-name="Chocolate Chip Cookie" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+                <li class="list-group-item">Brownie<button data-name="Brownie" type="button"
+                        class="btn btn-outline-danger add-buttons">$1.00</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row">
+    <div style="float: left;">
+        <div class="personalNote">
+            <form id="create-form">
+
+                <div class="form-group">
+                    <label for="ca">Add a Personal Note to your Order:</label>
+                    <input type="text" id="ca" class="textarea" name="burger_name">
+                </div>
+
+                <div class="form-group">
+                    <label for="devoured">Who is your note for?</label><br>
+                    <input type="radio" name="devoured" value="1" id="devoured" checked> To: The Kitchen<br>
+                    <input type="radio" name="devoured" value="0" id="not-eaten"> To: The Delivery Service
+                </div>
+
+                <button type="submit">Submit!</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<h1 style="text-align:center">Your Order:</h1>
+
+<div class="ordercontainer"></div>
+<a href="mailto:personalized_order@mcdonalds.com" id="submitBtn" class="btn btn-danger btn-lg active" role="button"
+    aria-pressed="true">Submit Order</a>
