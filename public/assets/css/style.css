@@ -7,7 +7,37 @@
   margin-left: 2%;
   width: 100vw;
 } */
-
+.navbar {
+  margin-bottom: 2rem;
+  background-color: white;
+  text-align: center;
+}
+.navbar-brand {
+  font-family: "Vidaloka", serif;
+  font-size: 16pt;
+  color: #495057;
+}
+.nav-link,
+.dropdown-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11pt;
+  color: #495057;
+}
+.navbar-brand:hover {
+  color: #495057;
+}
+.nav-link:hover {
+  color: #d90429;
+  transform: scale(1.3);
+}
+li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10pt;
+}
+.card-header {
+  font-family: "Vidaloka", serif;
+  font-size: 14pt;
+}
 .card {
   margin-right: 25px;
   margin-left: 25px;
@@ -20,11 +50,8 @@
 .mick {
   background-image: url("../img/fast.png");
   background-position: right center;
-  margin-bottom: 1rem;
 }
-ul {
-  margin-bottom: 1rem;
-}
+
 /* left top
 left center
 left bottom
@@ -63,6 +90,7 @@ span {
   border-radius: 4px;
   background-color: #f8f8f8;
   resize: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card-header {
@@ -78,7 +106,10 @@ span {
   margin-left: 150px;
   margin-bottom: 10px;
 }
-
+label,
+input {
+  font-family: "Montserrat", sans-serif;
+}
 .ordercontainer {
   width: 100vw;
   height: auto;

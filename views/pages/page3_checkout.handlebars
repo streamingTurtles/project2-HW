@@ -19,7 +19,7 @@
     </div>
 </div>
 <!-- start nav -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar bg" style="text-align: center;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">yourEats</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -46,7 +46,7 @@
                         <i class="fas fa-door-open"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                        <li><a class="dropdown-item" href="/">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -161,29 +161,37 @@
 </div>
 
 <div class="row">
-    <div style="float: left;">
-        <div class="personalNote">
-            <form id="create-form">
+    <div class="col-6">
+        {{!-- <div style="float: left;"> --}}
+            <div class="personalNote">
+                <form id="create-form">
 
-                <div class="form-group">
-                    <label for="ca">Add a Personal Note to your Order:</label>
-                    <input type="text" id="ca" class="textarea" name="burger_name">
-                </div>
+                    <div class="form-group">
+                        <label for="ca">Add a Personal Note to your Order:</label>
+                        <input type="text" id="ca" class="textarea" name="burger_name">
+                    </div>
 
-                <div class="form-group">
-                    <label for="devoured">Who is your note for?</label><br>
-                    <input type="radio" name="devoured" value="1" id="devoured" checked> To: The Kitchen<br>
-                    <input type="radio" name="devoured" value="0" id="not-eaten"> To: The Delivery Service
-                </div>
+                    <div class="form-group">
+                        <label for="devoured">Who is your note for?</label><br>
+                        <input type="radio" name="devoured" value="1" id="devoured" checked> To: The Kitchen<br>
+                        <input type="radio" name="devoured" value="0" id="not-eaten"> To: The Delivery Service
+                    </div>
+                    <br>
+                    <button style="float: left;" class="btn btn-outline-danger" type="submit">Submit!</button>
+            </div>
 
-                <button type="submit">Submit!</button>
             </form>
-        </div>
+            {{!--
+        </div> --}}
+    </div>
+    <div class="col-6">
+
+        <label style="text-align:center">Your Order:</label>
+
+        <div class="ordercontainer"></div>
+        <a href="mailto:personalized_order@mcdonalds.com" id="submitBtn" class="btn btn-danger btn-lg active"
+            role="button" aria-pressed="true">Submit Order
+        </a>
+        <br><br><br>
     </div>
 </div>
-
-<h1 style="text-align:center">Your Order:</h1>
-
-<div class="ordercontainer"></div>
-<a href="mailto:personalized_order@mcdonalds.com" id="submitBtn" class="btn btn-danger btn-lg active" role="button"
-    aria-pressed="true">Submit Order</a>
