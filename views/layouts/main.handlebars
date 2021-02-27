@@ -9,13 +9,50 @@
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 	<title>Personalized Ordering Website!</title>
 	<script src="/assets/js/burgers.js"></script>
+
+	{{!-- make a sticky footer  --}}
+	<style>
+	.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: red;
+	color: white;
+	text-align: center;
+	}
+	</style>
+
 </head>
 
 <body>
 
-	{{{ body }}}
 
+	{{{ body }}}
 	
+    {{!-- added a wrapper div to make the footer sticky  --}}
+	<div class="footer">  
+		<footer class=" center footer">
+			<div class="container">
+				<p> copyright © Personalized Ordering App 2021 </p>
+			</div>
+		</footer>
+	</div>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

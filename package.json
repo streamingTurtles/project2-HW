@@ -1,30 +1,30 @@
 {
-  "name": "burger",
+  "name": "hw13-burger-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app uses Node, Express, Handlebars & mySQL and is deployed on Heroku",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neoblack91/burger.git"
+    "url": "https://github.com/streamingTurtles/project2-HW"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Margaret Elson, Natalia Carvajal, Rajahni Fields, Peter Cardillo ",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/neoblack91/burger/issues"
+    "url": "https://github.com/streamingTurtles/project2-HW"
   },
-  "homepage": "https://github.com/neoblack91/burger#readme",
+  "homepage": "https://github.com/streamingTurtles/project2-HW",
   "dependencies": {
+    "asciiart-logo": "^0.2.6",
+    "console.table": "^0.10.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
-    "handlebars-helper-css": "^0.1.0",
-    "mcdonalds-api": "^1.0.0",
+    "handlebars": "^4.7.7",
+    "inquirer": "^7.3.3",
     "mysql": "^2.18.1"
   }
 }

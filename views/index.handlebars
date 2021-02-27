@@ -133,7 +133,14 @@
 <h1>Map</h1>
 <input id="address" type="textbox" value="Brooklyn, NY" />
 <input id="submit" type="button" value="Search" class="trick" />
+<p class="fmtbutton" onclick="ftn_findlatlngfrompc(document.getElementById('submit').value, PointFound);">&nbsp;Convert&nbsp;</p>
+<div id="divFeedback" style="font-weight: bold;">
+  <p>Lat and Lng</p>
+  <strong></strong>
+</div>
 <div id="map"></div>
+
+
 <script>
   function initMap(){
     var options = {
@@ -145,11 +152,14 @@
 
     var marker = new google.maps.Marker({
       position: {lat:40.8075, lng:-73.9626},
-      map: map
+      map: map,
+      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
    })
-
  }
 </script>
+
 <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy34MybYuYpUuM0BjJt66nzUFXVnrp9rM&callback=initMap">
+    {{!-- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy34MybYuYpUuM0BjJt66nzUFXVnrp9rM&callback=initMap"> --}}
+    src="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyDy34MybYuYpUuM0BjJt66nzUFXVnrp9rM">
 </script>
+

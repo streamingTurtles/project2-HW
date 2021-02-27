@@ -22,13 +22,16 @@
   - [Github Repo Link](#github-repo-link)
   - [HEROKU Live APP Link](https://radiant-springs-30491.herokuapp.com/)
   - [Github Information](#github-information)
-  - [my-email-for-questions-and-information](#my-email-for-questions-and-information)
+  - [my-email-us-questions-and-information](#my-email-for-questions-and-information)
 
 
 
   - - -
-  ## Screenshot of the App running as localhost:8080 in the browser:
-  ![Screenshot](public/assets/img/)
+  ## Screenshot of Initial wireFrame design for "yourEats" application:
+  ![Screenshot](public/assets/img/Page_1.png)
+  ![Screenshot](public/assets/img/Page_1andhalf.png)
+  ![Screenshot](public/assets/img/Page_2_Bottom.png)
+  ![Screenshot](public/assets/img/Page_2_Top.png)
 
 
 
@@ -39,7 +42,7 @@
   &nbsp;
   - - -
   ## Project Description:
-  - This is a fun little app that tracks a user eating a Hamburger.
+  - This is a group project-2.....
 
   &nbsp;
   - - -
