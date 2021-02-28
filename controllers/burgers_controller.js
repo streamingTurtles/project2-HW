@@ -27,10 +27,15 @@ const db = require("../models");
 // });
 
 // PAC 02/21,22/2021 - adding login/logout route page/s
-// Login
+//sign in
 router.get("/page1_signup", (req, res) => {
-  console.log("log me in");
+  console.log("Sign in");
   res.render("pages/page1_signup");
+});
+// Login
+router.get("/", (req, res) => {
+  console.log("log me in");
+  res.render("index");
 });
 // Logout
 router.get("/logout", (req, res) => {
@@ -41,20 +46,13 @@ router.get("/page2_restaurant", (req, res) => {
   console.log("im hungry");
   res.render("pages/page2_restaurant");
 });
-router.get("../view/layouts/main.handlebars", (req, res) => {
-  console.log("feed me");
-  res.render("../view/layouts/main.handlebars");
-});
+// router.get("../view/layouts/main.handlebars", (req, res) => {
+//   res.render("../view/layouts/main.handlebars");
+// });
 // checkout food
 router.get("/page3_checkout", (req, res) => {
   console.log("feed me");
   res.render("pages/page3_checkout");
-});
-
-//sign in
-router.get("/page1_signup", (req, res) => {
-  console.log("Sign in");
-  res.render("page1_signup");
 });
 
 // router.post("/api/burgers", (req, res) => {
