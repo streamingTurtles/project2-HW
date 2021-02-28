@@ -35,7 +35,7 @@ console.log("streaming Turtles are here");
 
 // Diplays Title of the application in the console - I use this to test and conpare what is also displayed in the browser - use as a confidence reference
 function init() {
-  const appTitle = appName({ name: "HW 13: The Burger App" }).render();
+  const appTitle = appName({ name: "Welcome to yourEats!" }).render();
   console.log(appTitle);
 }
 init();

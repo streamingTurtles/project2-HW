@@ -52,9 +52,9 @@ router.get("/page3_checkout", (req, res) => {
 });
 
 //sign in
-router.get("/index", (req, res) => {
+router.get("/page1_signup", (req, res) => {
   console.log("Sign in");
-  res.render("index");
+  res.render("page1_signup");
 });
 
 // router.post("/api/burgers", (req, res) => {
