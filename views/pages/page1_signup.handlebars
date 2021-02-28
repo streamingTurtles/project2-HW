@@ -13,7 +13,7 @@ font-family: 'Vidaloka', serif; --}}
 
 <style>
   body {
-    background-image: url("fast.png");
+    background-image: url("/assets/img/fast.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,13 +109,13 @@ font-family: 'Vidaloka', serif; --}}
           <form action="/users/login" method="post">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" class="form-control" name="email" required>
+              <input id="email" type="email" class="form-control" name="email" required>
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" class="form-control" name="password" required>
+              <input id="password" type="password" class="form-control" name="password" required>
             </div>
-            <a id="login-btn" class="btn btn-secondary" href="page2_restaurant">Sign in</a>
+            <a id="login-btn" class="btn btn-secondary"> Sign in</a>
             <div id="sign" class="text-center">
               Returning User? Please <a href="/">Log in <i class="fa fa-external-link-square"
                   aria-hidden="true"></i></a>
@@ -128,4 +128,5 @@ font-family: 'Vidaloka', serif; --}}
     </div>
 
   </div>
+  <script type="text/javascript" src="/assets/js/signup.js"></script>
 </body>

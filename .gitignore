@@ -9,3 +9,4 @@ node_modules
 .env
 # https://zetcode.com/javascript/dotenv/
 # put password into environment variable to obfuscate from plain sight 
+demo.html
