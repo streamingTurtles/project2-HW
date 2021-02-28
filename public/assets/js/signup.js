@@ -7,10 +7,10 @@ $(document).ready(function () {
     console.log("work now!!");
     event.preventDefault();
 
-    var nameInput = $("#name");
-    var emailInput = $("#email");
-    var usernameInput = $("#username");
-    var passwordInput = $("#password");
+    var nameInput = $("input[name='name']");
+    var emailInput = $("input[name='email']");
+    var usernameInput = $("input[name='username']");
+    var passwordInput = $("input[name='password']");
 
     var userData = {
       name: nameInput.val().trim(),
