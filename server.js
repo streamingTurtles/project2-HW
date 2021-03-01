@@ -1,10 +1,17 @@
 // for testing in the console:
 const appName = require("asciiart-logo");
 require("console.table");
-
 const express = require("express");
 const PORT = process.env.PORT || 8080;
 const app = express();
+var session = require("express-session");
+// Requiring passport as we've configured it
+var passport = require("./config/passport");
+app.use(
+  session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 
 // render static content from the public folder
 app.use(express.static("public"));
@@ -23,8 +30,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-const routes = require("./controllers/burgers_controller.js");
-app.use(routes);
+require("./controllers/burgers_controller.js")(app);
 
 db.sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
