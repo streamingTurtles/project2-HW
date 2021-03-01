@@ -1,0 +1,144 @@
+{{!-- <a id="login-btn" class="btn btn-secondary" href="/">Login</a> --}}
+
+{{!--
+<button onclick="homePage">logout</button>
+<script>
+  homePage(){
+    window.location = '/'
+  }
+</script> --}}
+{{!-- font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Stick', sans-serif;
+font-family: 'Vidaloka', serif; --}}
+
+<style>
+  body {
+    background-image: url("fast.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+
+  #titl-1,
+  .fas {
+    color: whitesmoke;
+    font-family: 'Vidaloka', serif;
+  }
+
+  #par {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  #sign-up {
+    margin-left: 25%;
+  }
+
+  #sign {
+    text-align: center;
+    color: #495057;
+    margin-top: 25%;
+    text-decoration: none;
+    color
+  }
+
+  .jumbotron {
+    text-align: center;
+    margin-top: 125px;
+  }
+
+  .card {
+    margin-top: 125px;
+    color: #495057;
+
+
+  }
+
+  #login-btn {
+    background-color: white;
+    color: #495057;
+    float: left;
+    margin-top: 5%;
+
+  }
+
+  #login-btn:hover {
+    background-color: #495057;
+    color: white;
+    transform: scale(1.2);
+  }
+
+  a {
+    color: #495057;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: #495057;
+    color: white;
+  }
+
+  .footer {
+    padding-top: .8%;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #c1121f;
+    color: white;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div id="sign-up" class="container">
+    {{!-- <div class="row">
+      <div class="col-7">
+        <div class="jumbotron jumbotron-fluid">
+          <h1 id="titl-1" class="display-4">Welcome to yourEats!</h1>
+          <p id="par" class="lead">Where We're Always in the Mood for Food</p>
+          <i class="fas fa-glass-cheers fa-10x"></i>
+        </div>
+      </div> --}}
+      <div class="col-6">
+        <div class="card card-body">
+          <h3 class="text-center">
+            Sign Up
+          </h3>
+          <form action="/users/login" method="post">
+            <div class="form-group">
+              <label for="email">Name</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Username</label>
+              <input type="password" class="form-control" name="password" required>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" required>
+                <div class="form-group">
+                  <label for="email">Confirm Password</label>
+                  <input type="email" class="form-control" name="email" required>
+                </div>
+                <a id="login-btn" class="btn btn-secondary" href="page2_restaurant">Sign Up</a>
+                <div id="sign" class="text-center">
+                  Returning User? Please <a href="/">Log in <i class="fa fa-external-link-square"
+                      aria-hidden="true"></i></a>
+
+                  </h5>
+                </div>
+          </form>
+        </div>
+      </div>
+      {{!--
+    </div> --}}
+  </div>
+</body>
