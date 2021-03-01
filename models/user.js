@@ -8,25 +8,25 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
-      validate: {
-        isName: true,
-      },
+      // validate: {
+      //   isName: true,
+      // },
     },
     username: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
-      validate: {
-        isName: true,
-      },
+      // validate: {
+      //   isName: true,
+      // },
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
-      validate: {
-        isEmail: true,
-      },
+      // validate: {
+      //   isEmail: true,
+      // },
     },
     // The password cannot be null
     password: {
