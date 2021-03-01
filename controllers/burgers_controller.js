@@ -5,14 +5,7 @@ const router = express.Router();
 const burger = require("../models/burger.js");
 const login = require("../models/login.js");
 
-// Testing code to the front End - working!
-// router.get('/', function(req, res) {
-//     res.json({"message": "Streaming Turtles"});
-//     res.render('index');
-// });
 
-// Build out the routes
-//
 router.get("/", (req, res) => {
   burger.selectAll((data) => {
     const hbsObject = {

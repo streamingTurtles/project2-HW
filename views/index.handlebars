@@ -129,17 +129,64 @@
 <div class="ordercontainer"></div>
 <a href="mailto:personalized_order@mcdonalds.com" id="submitBtn" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Submit Order</a>
 
-<br>
-<h1>Map</h1>
-<input id="address" type="textbox" value="Brooklyn, NY" />
-<input id="submit" type="button" value="Search" class="trick" />
-<p class="fmtbutton" onclick="ftn_findlatlngfrompc(document.getElementById('submit').value, PointFound);">&nbsp;Convert&nbsp;</p>
-<div id="divFeedback" style="font-weight: bold;">
-  <p>Lat and Lng</p>
-  <strong></strong>
-</div>
-<div id="map"></div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="locationbknd">
+  <div class="location">
+    <h1>McDonalds Near You:</h1> 
+    <h4>Zipcode: <input id="address" type="textbox" value=""><input id="submit" type="button" value="Search" class="trick" /></h4>
+  </div>
+    <div id="map"></div>
+</div>
+
+<br>
+<br>
+
+<script>
+/*console.log("test")
+
+var map;
+  var center = new google.maps.LatLng(40.8075, -73.9626);
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: center,
+    zoom: 13
+  });
+  var request = {
+    location: center,
+    radius: 8047
+    types: ['restaurant']
+  };
+  var service = new google.maps.place.PlacesService(map);
+  service.nearbySearch(request, callback);
+
+function callback(results, status){
+  console.log(results)
+  if(status === google.maps.places.PlacesServiceStatus.OK){
+    for(var i = 0; i < results.length; i++){
+      createMarker(results[i]);
+    }
+  }
+
+
+function createMarker(place){
+  var placeLoc = place.geometry.location;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
+  })
+}
+
+
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 <script>
   function initMap(){
@@ -147,19 +194,39 @@
       zoom: 12,
       center: {lat:40.7831, lng:-73.9712}
     }
+    
 
     var map = new google.maps.Map(document.getElementById('map'), options);
 
+    var request = {
+    location: options.center,
+    radius: 8047,
+    types: ['restaurant']
+    };
+
+    var service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, placesResult);
+
+    function placesResult(results, status){
+      console.log(results)
+      /*if(status === google.maps.places.PlacesServiceStatus.OK){
+        for(var i = 0; i < results.length; i++){
+          createMarker(results[i]);
+        }
+      }*/
+    }
+    
     var marker = new google.maps.Marker({
-      position: {lat:40.8075, lng:-73.9626},
+      position: {lat:40.7831, lng:-73.9712},
       map: map,
       icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
+
    })
  }
 </script>
 
-<script async
-    {{!-- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy34MybYuYpUuM0BjJt66nzUFXVnrp9rM&callback=initMap"> --}}
-    src="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyDy34MybYuYpUuM0BjJt66nzUFXVnrp9rM">
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy34MybYuYpUuM0BjJt66nzUFXVnrp9rM&libraries=places&callback=initMap">
 </script>
 
