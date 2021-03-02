@@ -1,3 +1,20 @@
+<style>
+  h2,
+  h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #495057;
+  }
+
+  #logOut,
+  #cancel {
+    margin-top: 3%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+</style>
+
+
 {{!-- Called By the log out button inside the >navbar --}}
 <div class="modal fade" id="logout-modal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -16,8 +33,11 @@
       </div>
 
       <div class="modal-footer text-center">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" title="Click to stay logged-in"><i class="fas fa-window-close"> Cancel</i></button>
-        <a title="Click to logout" class="btn btn-primary" href="/logout"> Logout <i class="fas fa-sign-out-alt"> </i></a>
+        <button id="cancel" type="button" class="btn btn-secondary" data-dismiss="modal"
+          title="Click to stay logged-in"><i class="fas fa-window-close"> Cancel</i></button>
+        <a id="logOut" title="Click to logout" class="btn btn-secondary" href="/logout"> Logout <i
+            class="fas fa-sign-out-alt">
+          </i></a>
       </div>
 
     </div>

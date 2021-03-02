@@ -24,15 +24,37 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  {{!-- google font --}}
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display+SC&family=Stick&family=Vidaloka&display=swap"
+    rel="stylesheet">
+
   <script src="/js/index.js"></script>
   <title>yourEats</title>
 
-
-
-
-
   {{!-- make a sticky footer --}}
   <style>
+    .nav-item {
+
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn {
+      color: #495057;
+      margin-top: -5%;
+      font-family: 'Montserrat', sans-serif;
+      box-shadow: none;
+
+    }
+
+
+    .btn:hover {
+      background-color: #495057;
+      color: white;
+      transform: scale(1.1);
+    }
+
+
     .footer {
       padding-top: .8%;
       font-family: 'Montserrat', sans-serif;
@@ -47,18 +69,14 @@
       text-align: center;
     }
   </style>
-
-
-
-
-
 </head>
 
-{{!--
 
-<body class="bg-secondary my-4 my-lg-5 py-5 py-lg-4"> --}}
+<body class="bg my-4 my-lg-5 py-5 py-lg-4">
 
-  <body class="my-4 my-lg-5">
+  {{!--
+
+  <body class="my-4 my-lg-5"> --}}
 
     <nav id="mainTopNavbar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark px-1 p-0">
 
@@ -102,11 +120,11 @@
         </form> --}}
       </div>
       <div id="cart_logout" class="my-0 px-0 btn-group mx-0" role="group">
-        <a id="navbar-view-cart" class="btn btn-primary mx-0 px-1 my-2" href="/cart" title="View your cart">
+        <a id="navbar-view-cart" class="btn btn-light mx-0 px-1 my-2" href="/cart" title="View your cart">
           <span id="navbar-cart-amount" class="badge badge-light m-0 p-1 mr-1">&nbsp;&nbsp;</span>Cart Items<span
             id="cart_info" class="ml-1"></span>
         </a>
-        <button type="button" class="btn btn-primary px-1 mx-0 my-2" data-toggle="modal" data-target="#logout-modal"
+        <button type="button" class="btn btn-light px-1 mx-0 my-2" data-toggle="modal" data-target="#logout-modal"
           title="Logout">
           Logout <i class="fas fa-sign-out-alt m-0"></i>
         </button>
