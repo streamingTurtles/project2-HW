@@ -74,17 +74,18 @@
             <div class="card-header">{{name}}</div>
             <ul class="list-group list-group-flush">
                 {{#each products}}
-                    <li class="list-group-item">{{this.dataValues.name}}
-                        <button data-name="{{this.dataValues.name}}" type="button" class="btn btn-outline-danger add-buttons">{{this.dataValues.price}}</button>
-                    </li>
+                <li class="list-group-item">{{this.dataValues.name}}
+                    <button data-name="{{this.dataValues.name}}" type="button"
+                        class="btn btn-outline-danger add-buttons">{{this.dataValues.price}}</button>
+                </li>
                 {{/each}}
             </ul>
         </div>
-    </div> 
+    </div>
 </div>
 {{/each}}
 
-{{!-- 
+{{!--
 
 <div style="display: inline-block;">
     <div class="col-sm-3" id="line">
@@ -189,5 +190,45 @@
         <br><br><br>
     </div>
 </div>
+<div class="locationbknd">
+    <div class="location">
+        <h1>McDonalds Near You:</h1>
+        <h4>Zipcode: <input id="address" type="textbox" value=""><input id="submit" type="button" value="Search"
+                class="trick" /></h4>
+    </div>
+    <div id="map"></div>
+</div>
 
+<br>
+<br>
+
+<script>
+    function initMap() {
+        var options = {
+            zoom: 12,
+            center: { lat: 40.7359, lng: -73.9911 }
+        }
+
+
+        var map = new google.maps.Map(document.getElementById('map'), options);
+
+        var request = {
+            location: options.center,
+            radius: 8047,
+            types: ['restaurant']
+        };
+
+        var marker = new google.maps.Marker({
+            position: { lat: 40.709363, lng: -74.009984 },
+            map: map,
+            icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
+        })
+
+    }
+</script>
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy34MybYuYpUuM0BjJt66nzUFXVnrp9rM&callback=initMap">
+    </script>
 <script src="/js/burgers.js"></script>
