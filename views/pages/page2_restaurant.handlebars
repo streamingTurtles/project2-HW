@@ -34,48 +34,22 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+         {{#each category}}
+        <div class="col-md-6">        
             <div class="card" style="width: 18rem">
                 <img src="McDonalds.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title">Mcdonald</h5>
-                    <p class="card-text">Get some awesome Mcdonald food!!</p>
-                    <a href="page3_checkout" class="btn btn-primary">EAT Mcdonalds!</a>
+                    <h5 class="card-title">{{name}}</h5>
+                    <p class="card-text">{{description}}</p>
+                    <a href="/category/{{id}}" class="btn btn-primary" title="Click to view all food selections in {{name}}"> <i class="fas fa-arrow-circle-right"></i>EAT {{name}}! <i class="fas fa-arrow-circle-left"></i></a>
                 </div>
             </div>
         </div>
+        {{/each}}
 
-        <div class="col-md-6">
-            <div class="card" style="width: 18rem">
-                <img src="Shoyu_Ramen.jpg" class="card-img-top" alt="..."  />
-                <div class="card-body">
-                    <h5 class="card-title">Ramen</h5>
-                    <p class="card-text">Get some awesome Ramen!!</p>
-                    <a href='' class="btn btn-primary">EAT Ramen!</a>
-                </div>
-            </div>
-        </div>
+
+
     </div>
 
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card" style="width: 18rem">
-                <img src="sushiplatters.png" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Sushi</h5>
-                    <p class="card-text">Get some tasty Sushi!!</p>
-                    <a href="#" class="btn btn-primary">Go Sushi!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem">
-            <img src="taco-bell.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-                <h5 class="card-title">Taco Bell</h5>
-                <p class="card-text">Get some awesome Taco Bell!!</p>
-                <a href="#" class="btn btn-primary">Go Taco Bell!</a>
-            </div>
-        </div>
-    </div>
+    
 </div>

@@ -67,11 +67,11 @@
         <a class="nav-link" href="#">Taco Bell</a>
     </li>
 </ul> --}}
-
+{{#each categories}}
 <div style="display: inline-block;">
     <div class="col-sm-3" id="line1">
         <div class="card" style="width: 18rem;">
-            <div class="card-header">Burgers</div>
+            <div class="card-header">{{this}}</div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Big Mac<button data-name="Big Mac" type="button"
                         class="btn btn-outline-danger add-buttons">$3.99</li>
@@ -87,11 +87,11 @@
                         class="btn btn-outline-danger add-buttons">$2.00</li>
             </ul>
         </div>
-    </div>
+    </div> 
 </div>
-</div>
+{{/each}}
 
-
+{{!-- 
 
 <div style="display: inline-block;">
     <div class="col-sm-3" id="line">
@@ -159,7 +159,7 @@
         </div>
     </div>
 </div>
-</div>
+</div> --}}
 
 <div class="row">
     <div class="col-6">

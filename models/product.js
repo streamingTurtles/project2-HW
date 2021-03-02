@@ -42,6 +42,10 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: { name: 'categoryId', allowNull: false },
         onDelete: 'cascade'
       })
+      Product.belongsTo(models.restaurants, {
+        foreignKey: { name: 'restaurantId', allowNull: false },
+        onDelete: 'cascade'
+      })
     }
     return Product
   }
