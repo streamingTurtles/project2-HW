@@ -1,27 +1,35 @@
-DROP DATABASE IF EXISTS burgers_db;
 
-CREATE DATABASE burgers_db;
-USE burgers_db;
-
-CREATE TABLE burgers(
-    id INT NOT NULL AUTO_INCREMENT,
-    burger_name VARCHAR(200) NOT NULL,
-    devoured BOOLEAN default false,
-    PRIMARY KEY (id)
-);
+DROP DATABASE IF EXISTS youreats_db;
+CREATE DATABASE youreats_db;
+USE youreats_db;
 
 
 
--- seed data input with some traditional hamburgers
-INSERT INTO burgers (burger_name) VALUES ('small hamburger');
-INSERT INTO burgers (burger_name) VALUES ('medium hamburger');
-INSERT INTO burgers (burger_name, devoured) VALUES ('cheesburger', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('double burger', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('bacon burger', true);
-INSERT INTO burgers (burger_name) VALUES ('pizza burger');
+
+-- DROP DATABASE IF EXISTS burgers_db;
+
+-- CREATE DATABASE burgers_db;
+-- USE burgers_db;
+
+-- CREATE TABLE burgers(
+--     id INT NOT NULL AUTO_INCREMENT,
+--     burger_name VARCHAR(200) NOT NULL,
+--     devoured BOOLEAN default false,
+--     PRIMARY KEY (id)
+-- );
 
 
-SELECT * FROM burgers;
+
+-- -- seed data input with some traditional hamburgers
+-- INSERT INTO burgers (burger_name) VALUES ('small hamburger');
+-- INSERT INTO burgers (burger_name) VALUES ('medium hamburger');
+-- INSERT INTO burgers (burger_name, devoured) VALUES ('cheesburger', true);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ('double burger', true);
+-- INSERT INTO burgers (burger_name, devoured) VALUES ('bacon burger', true);
+-- INSERT INTO burgers (burger_name) VALUES ('pizza burger');
+
+
+-- SELECT * FROM burgers;
 
 
 

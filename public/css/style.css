@@ -9,7 +9,8 @@
 } */
 .navbar {
   margin-bottom: 2rem;
-  background-color: white;
+  /* background-color: white; */
+  background-color: #dfe237;
 }
 .navbar-brand {
   font-family: "Vidaloka", serif;
@@ -21,6 +22,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 11pt;
   color: #495057;
+ 
 }
 .navbar-brand:hover {
   color: #495057;
@@ -98,7 +100,9 @@ span {
 
 .card-header {
   text-align: center;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
+  background-color: #dfe237;
+  
 }
 
 .btn {
