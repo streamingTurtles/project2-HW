@@ -66,19 +66,8 @@ font-family: 'Vidaloka', serif; --}}
 
 
   #login-btn:hover {
-    background-color: #495057;
     color: white;
     transform: scale(1.2);
-  }
-
-  a {
-    color: #495057;
-    text-decoration: none;
-  }
-
-  a:hover {
-    background-color: #495057;
-    color: white;
   }
 
   .footer {
@@ -102,7 +91,6 @@ font-family: 'Vidaloka', serif; --}}
           <h1 id="titl-1" class="display-4">Welcome to yourEats!</h1>
           <p id="par" class="lead">Where We're Always in the Mood for Food</p>
           <i class="fas fa-hamburger fa-10x"></i>
-
         </div>
       </div>
       <div class="col-5">
@@ -192,186 +180,13 @@ font-family: 'Vidaloka', serif; --}}
     radius: 8047,
     types: ['restaurant']
     };
-
-    //var service = new google.maps.places.PlacesService(map);
-    //service.nearbySearch(request, placesResult);
-
-    //function placesResult(results, status){
-      /*if(status === google.maps.places.PlacesServiceStatus.OK){
-        for(var i = 0; i < results.length; i++){
-          createMarker(results[i]);
-        }
-      }*/
-    
   
     var marker = new google.maps.Marker({
       position: {lat: 40.709363, lng: -74.009984},
       map: map,
       icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
     })
-   /* var marker = new google.maps.Marker({
-      position: {lat:40.716290, lng:-74.010590},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.718510, lng:-74.001160},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.718940, lng:-73.988310},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.728870, lng:-74.004960},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.729070, lng:-73.993240},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.726430, lng:-73.985810},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.730810, lng:-73.982430},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.737910, lng:-73.996850},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.737110, lng:-73.990870},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.737060, -73.979610},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.740580, lng:-73.987950},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-})
-    var marker = new google.maps.Marker({
-      position: {lat:40.741900, lng:-73.993170},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-
-    })
-
-    var marker = new google.maps.Marker({
-      position: {lat:40.742960, lng:-73.983760},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-    var marker = new google.maps.Marker({
-      position: {lat:40.744980, lng:-73.979110},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-    var marker = new google.maps.Marker({
-      position: {lat:40.746030, lng:-73.990800},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-    var marker = new google.maps.Marker({
-      position: {lat:40.744230, lng:-73.990170},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-    var marker = new google.maps.Marker({
-      position: {lat:40.751060, lng:-73.990330},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-    var marker = new google.maps.Marker({
-      position: {lat:40.750460, lng:-73.990560},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-    var marker = new google.maps.Marker({
-      position: {lat:40.750790, lng:-73.986730},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-    var marker = new google.maps.Marker({
-      position: {lat:40.752480, lng:-73.992850},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-    var marker = new google.maps.Marker({
-      position: {lat:40.752940, lng:-73.980360},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-    var marker = new google.maps.Marker({
-      position: {lat:40.758050, lng:-73.988770},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.758180, lng:-73.985500},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.759010, lng:-73.985170},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.757560, lng:-73.981670},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.75611, lng:-73.97055},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.76079, lng:-73.98352},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.76594, lng:-73.98339},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.7831, lng:-73.9712},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.7831, lng:-73.9712},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.7831, lng:-73.9712},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
-   var marker = new google.maps.Marker({
-      position: {lat:40.7831, lng:-73.9712},
-      map: map,
-      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
-   })
- }*/
+  
   }
 </script>
 
