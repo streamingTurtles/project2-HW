@@ -1,4 +1,4 @@
-{{!-- Page to login  --}}
+{{!-- Page to login --}}
 
 
 
@@ -38,29 +38,34 @@
 
   .jumbotron {
     text-align: center;
-    margin-top: 125px;
+    margin-top: 50px;
     background-color: #0000;
   }
 
   .card {
     margin-top: 125px;
     color: #495057;
+  }
 
+  form {
+    background-color: white;
+    margin-top: 150px;
+    padding: 5% 8%;
+    margin-right: 30px;
 
   }
 
-  #login-btn {
+  #login_btn {
+    border-color: #495057;
     background-color: white;
     color: #495057;
-    float: left;
-    margin-top: 5%;
-
+    margin-top: -5%;
   }
 
-  #login-btn:hover {
+  #login_btn:hover {
     background-color: #495057;
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   a {
@@ -86,35 +91,41 @@
   }
 </style>
 
+<div class="row">
+  <div class="col-7">
+    <div class="jumbotron jumbotron-fluid">
+      <h1 id="titl-1" class="display-4">Welcome to yourEats!</h1>
+      <p id="par" class="lead">Where We're Always in the Mood for Food</p>
+      <i class="fas fa-hamburger fa-10x"></i>
 
-
-        <div class="jumbotron jumbotron-fluid">
-          <h1 id="titl-1" class="display-4">Welcome to yourEats!</h1>
-          <p id="par" class="lead">Where We're Always in the Mood for Food</p>
-          <i class="fas fa-hamburger fa-10x"></i>
-
-        </div>
-
-
-<script src="https://kit.fontawesome.com/7c715641eb.js" crossorigin="anonymous"></script>
-
-
-<div class="row d-flex justify-content-center">
-  <div class="col-10 col-md-6 p-4 shadow-lg p-md-5 my-4 bg-white rounded">
-    <form>
-      <div class="form-group">
-        <label for="username-login">Username: </label>
-        <input type="text" class="form-control" id="username-login" placeholder="Username" autocomplete="username">
-        <small id="username-help" class="form-text text-muted">We'll never share your information with anyone else.</small>
-      </div>
-      <div class="form-group">
-        <label for="user-password">Password: </label>
-        <input type="password" class="form-control " id="user-password" placeholder="Password" autocomplete="current-password">
-      </div>
-      <div id="login_error" class="alert alert-warning font-weight-bolder text-center invisible text-break" role="alert">
-      </div>
-      <button type="submit" id="login_btn" class="btn-block btn btn-primary font-weight-bold mt-3"> Log-in <i class="fas fa-sign-in-alt"> </i></button>
-    </form>
+    </div>
   </div>
+
+  <script src="https://kit.fontawesome.com/7c715641eb.js" crossorigin="anonymous"></script>
+
+
+  {{!-- <div class="row d-flex justify-content-center"> --}}
+    <div class="col-5">
+      <form>
+        <div class="form-group">
+          <label for="username-login">Username: </label>
+          <input type="text" class="form-control" id="username-login" placeholder="Username" autocomplete="username">
+          <small id="username-help" class="form-text text-muted">We'll never share your information with anyone
+            else.</small>
+        </div>
+        <div class="form-group">
+          <label for="user-password">Password: </label>
+          <input type="password" class="form-control " id="user-password" placeholder="Password"
+            autocomplete="current-password">
+        </div>
+        <div id="login_error" class="alert alert-warning font-weight-bolder text-center invisible text-break"
+          role="alert">
+        </div>
+        <button type="submit" id="login_btn" class="btn-block btn font-weight-bold"> Log-in <i
+            class="fas fa-sign-in-alt"> </i></button>
+      </form>
+    </div>
+    {{!--
+  </div> --}}
 </div>
 <script src="https://kit.fontawesome.com/7c715641eb.js" crossorigin="anonymous"></script>

@@ -71,20 +71,13 @@
 <div style="display: inline-block;">
     <div class="col-sm-3" id="line1">
         <div class="card" style="width: 18rem;">
-            <div class="card-header">{{this}}</div>
+            <div class="card-header">{{name}}</div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Big Mac<button data-name="Big Mac" type="button"
-                        class="btn btn-outline-danger add-buttons">$3.99</li>
-                <li class="list-group-item">Quarter Pounder<button data-name="Quarter Pounder" type="button"
-                        class="btn btn-outline-danger add-buttons">$5.99</li>
-                <li class="list-group-item">Double Quarter Pounder<button data-name="Double Quarter Pounder"
-                        type="button" class="btn btn-outline-danger add-buttons">$6.99</li>
-                <li class="list-group-item">McDouble<button data-name="McDouble" type="button"
-                        class="btn btn-outline-danger add-buttons">$3.00</li>
-                <li class="list-group-item">Cheeseburger<button data-name="Cheeseburger" type="button"
-                        class="btn btn-outline-danger add-buttons">$2.50</li>
-                <li class="list-group-item">Hamburger<button data-name="Hamburger" type="button"
-                        class="btn btn-outline-danger add-buttons">$2.00</li>
+                {{#each products}}
+                    <li class="list-group-item">{{this.dataValues.name}}
+                        <button data-name="{{this.dataValues.name}}" type="button" class="btn btn-outline-danger add-buttons">{{this.dataValues.price}}</button>
+                    </li>
+                {{/each}}
             </ul>
         </div>
     </div> 
@@ -196,3 +189,5 @@
         <br><br><br>
     </div>
 </div>
+
+<script src="/js/burgers.js"></script>

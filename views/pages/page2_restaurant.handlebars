@@ -1,11 +1,10 @@
 <style>
-    body {
-        background-image: url("fast.png");
-        background-position: center;
-        background-repeat: no-repeat;
+    .jumbotron {
+        background-image: url("/images/fast.png");
+        background-position: left center;
         background-size: cover;
-        height: 1200px;
     }
+
 
     .card {
         background: transparent
@@ -13,20 +12,21 @@
 
     h5,
     h1 {
-        color: rgb(131, 58, 180);
-
+        color: white;
+        font-family: 'Vidaloka', serif;
     }
 
     p {
-        color: white
+        color: whitesmoke;
+        font-family: 'Montserrat', sans-serif;
     }
 </style>
 
 <div class="jumbotron text-center">
     <div class="container">
-        <h1 class="display-4">Welcome <br>
-            Choose Your restaurant</h1>
-        <p class="lead">What you would like to eat?</p>
+        <h1 class="display-4">Welcome! <br>
+            Choose Your Restaurant</h1>
+        <p class="lead">Where Would You Like To Go?</p>
     </div>
 </div>
 
@@ -34,14 +34,17 @@
 
 <div class="container">
     <div class="row">
-         {{#each category}}
-        <div class="col-md-6">        
+        {{#each category}}
+        <div class="col-md-6">
             <div class="card" style="width: 18rem">
                 <img src="McDonalds.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">{{name}}</h5>
                     <p class="card-text">{{description}}</p>
-                    <a href="/category/{{id}}" class="btn btn-primary" title="Click to view all food selections in {{name}}"> <i class="fas fa-arrow-circle-right"></i>EAT {{name}}! <i class="fas fa-arrow-circle-left"></i></a>
+                    <a href="/restaurant/{{id}}" class="btn btn-primary"
+                        title="Click to view all food selections in {{name}}"> <i
+                            class="fas fa-arrow-circle-right"></i>EAT {{name}}! <i
+                            class="fas fa-arrow-circle-left"></i></a>
                 </div>
             </div>
         </div>
@@ -51,5 +54,5 @@
 
     </div>
 
-    
+
 </div>
