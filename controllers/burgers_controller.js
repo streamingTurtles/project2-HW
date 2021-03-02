@@ -1,18 +1,13 @@
 const express = require("express");
 const router = express.Router();
+const McDonaldsApi = require('mcdonalds-api')("US")
+
 
 // Import the model burger.js to its object methods to interact with the database
 const burger = require("../models/burger.js");
 const login = require("../public/assets/js/login.js");
 
-// Testing code to the front End - working!
-// router.get('/', function(req, res) {
-//     res.json({"message": "Streaming Turtles"});
-//     res.render('index');
-// });
 
-// Build out the routes
-//
 router.get("/", (req, res) => {
   burger.selectAll((data) => {
     const hbsObject = {
@@ -23,6 +18,17 @@ router.get("/", (req, res) => {
     res.render("index", hbsObject);
   });
 });
+
+router.get("/mcdonalds", function(req, res){
+  console.log("working?")
+  const getLocations = async (latitude, longitude, radius, count) => {
+    const locations = await McDonaldsApi.getLocations(latitude, longitude, radius, count)
+    console.log(locations)
+    /* DO ANY MANIPULATION TO THE RESULTS HERE */
+    
+}
+getLocations(40.7831, -73.9712, 8000, 10)
+})
 
 // PAC 02/21,22/2021 - adding login/logout route page/s
 // Login

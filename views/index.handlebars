@@ -119,5 +119,79 @@ font-family: 'Vidaloka', serif; --}}
       </div>
     </div>
 
+<div class="row">
+  <div style="float: left;">
+      <div class="personalNote">
+        <form id="create-form">
+        
+          <div class="form-group">
+            <label for="ca">Add a Personal Note to your Order:</label>
+            <input type="text" id="ca" class="textarea" name="burger_name">
+          </div>
+        
+          <div class="form-group">
+            <label for="devoured">Who is your note for?</label><br>
+            <input type="radio" name="devoured" value="1" id="devoured" checked> To: The Kitchen<br>
+            <input type="radio" name="devoured" value="0" id="not-eaten"> To: The Delivery Service
+          </div>
+        
+          <button type="submit" class="submitBtn">Submit!</button>
+        </form>
+      </div>
   </div>
-</body>
+</div>
+
+<h1 style="text-align:center">Your Order:</h1>
+
+<div class="ordercontainer"></div>
+<a href="mailto:personalized_order@mcdonalds.com" id="submitBtn" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Submit Order</a>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="locationbknd">
+  <div class="location">
+    <h1>McDonalds Near You:</h1> 
+    <h4>Zipcode: <input id="address" type="textbox" value=""><input id="submit" type="button" value="Search" class="trick" /></h4>
+  </div>
+    <div id="map"></div>
+</div>
+
+<br>
+<br>
+
+<script>
+  function initMap(){
+    var options = {
+      zoom: 12,
+      center: {lat:40.7359, lng:-73.9911}
+    }
+    
+
+    var map = new google.maps.Map(document.getElementById('map'), options);
+
+    var request = {
+    location: options.center,
+    radius: 8047,
+    types: ['restaurant']
+    };
+  
+    var marker = new google.maps.Marker({
+      position: {lat: 40.709363, lng: -74.009984},
+      map: map,
+      icon: "http://maps.google.com/mapfiles/kml/shapes/snack_bar.png"
+    })
+  
+  }
+</script>
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy34MybYuYpUuM0BjJt66nzUFXVnrp9rM&callback=initMap">
+</script>
+
