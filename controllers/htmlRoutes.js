@@ -11,11 +11,8 @@ router.get('/user/status', (req, res) => {
 
 // find all categories for the navbar dropdown
 router.get('/category/list', (req, res) => {
-  db.categories
-    .findAll({
-      attributes: ['id', 'name', 'description'],
-      order: [['id', 'ASC']]
-    })
+  db.restaurants
+    .findAll()
     .then(categoryList => {
       res.send({ categoryList })
     })
@@ -51,11 +48,8 @@ router.get('/cart/info', (req, res) => {
 
 // find all categories to render on the homepage
 router.get('/', (req, res) => {
-  db.categories
-    .findAll({
-      attributes: ['id', 'name', 'description', 'image_name'],
-      order: [['id', 'ASC']]
-    })
+  db.restaurants
+    .findAll()
     .then(dbCategory => {
       category = JSON.parse(JSON.stringify(dbCategory))
       if (req.isAuthenticated()) {
@@ -73,45 +67,50 @@ router.get('/restaurant/:id', (req, res) => {
       where: { id: req.params.id },
       include: [db.products]
     })
-    .then(dbRestaurantItems => { 
-      const categories = {
-        
-      };
-      dbRestaurantItems.dataValues.products.forEach((product, index) => {
+    .then(dbRestaurantItems => {
+      const categories = []
+      dbRestaurantItems.dataValues.products.forEach((product, mainIndex) => {
         db.categories.findOne({
           where: {id:product.categoryId}
         }).then((category)=>{
-          if (categories[category.name] && (index === dbRestaurantItems.dataValues.products.length-1)){
-            // categories.push(category.name);
-            console.log('********', categories);
-            res.render('pages/page3_checkout', {
-              restaurant: dbRestaurantItems.dataValues, 
-              categories: categories,
-              products: dbRestaurantItems.dataValues.products            
-            })                                  
-           } 
-           else if (categories[category.name] ===  undefined && (index === dbRestaurantItems.dataValues.products.length-1)){
-               categories[category.name]= category.id
-            res.render('pages/page3_checkout', {
-              restaurant: dbRestaurantItems.dataValues, 
-              categories: categories,
-              products: dbRestaurantItems.dataValues.products            
-            })           
-           } 
-           else if (categories[category.name]=== undefined){
-               console.log('whre everr you go ther you are - here we are')
-               categories[category.name]= category.id
+          if(categories.length){
+            categories.forEach((innerCategory, innerIndex) => {
+              if(innerCategory.name === category.name && innerIndex === categories.length -1  && (mainIndex === dbRestaurantItems.dataValues.products.length-1)){
+                innerCategory.products.push(product)
+                res.render('pages/page3_checkout', {
+                  restaurant: dbRestaurantItems.dataValues,
+                  categories: categories,
+                })
+              }else if(innerCategory.name != category.name && innerIndex === categories.length -1 && (mainIndex === dbRestaurantItems.dataValues.products.length-1)){
+                const categoryObj = {
+                  name: category.name,
+                  products: [product]
+                };
+                categories.push(categoryObj)
+                res.render('pages/page3_checkout', {
+                  restaurant: dbRestaurantItems.dataValues,
+                  categories: categories,
+                })
+              }else if(innerCategory.name != category.name && innerIndex === categories.length -1){
+                const categoryObj = {
+                  name: category.name,
+                  products: [product]
+                };
+                categories.push(categoryObj)
+              }
+              else if(innerCategory.name === category.name){
+                innerCategory.products.push(product)
+              }
+            })
+          }else{
+            const categoryObj = {
+              name: category.name,
+              products: [product]
+            };
+            categories.push(categoryObj)
           }
         })
-       
       })
-      console.log('*****', categories);
-      // RestaurantItems = JSON.parse(JSON.stringify(dbRestaurantItems))
-      // if (req.isAuthenticated()) {
-      //   res.render('pages/page3_checkout', { RestaurantItems })
-      // } else {
-      //   res.render('pages/page3_checkout', { layout: 'guest', RestaurantItems })
-      // }
     })
 })
 
