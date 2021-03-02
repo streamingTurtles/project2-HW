@@ -1,7 +1,7 @@
 {
     "development": {
       "username": "root",
-      "password": "mysqlforme2912PAC!",
+      "password": "process.env.DB_PASS,",
       "database": "youreats_db",
       "host": "localhost",
       "dialect": "mysql",
