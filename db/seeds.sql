@@ -10,7 +10,12 @@ INSERT INTO categories (name) VALUES
 INSERT INTO products (name, description, image_name, price, stock, restaurantId, categoryId, createdAt, updatedAt) VALUES
 ('Big Mac', 'single pattie', 'pic1.png', '2.99', '500', '1', '2', '2021-02-26 02:09:01', '2021-02-26 6:09:01'),
 ('Quarter Pounder', '4oz pattie', 'pic2.png', '3.99', '500', '1', '2', '2021-02-26 02:09:01', '2021-02-26 6:09:01'),
-('double Quarter Pounder', '8oz pattie', 'pic3.png', '4.99', '500', '1','2', '2021-02-26 02:09:01', '2021-02-26 6:09:01');
+('double Quarter Pounder', '8oz pattie', 'pic3.png', '4.99', '500', '1','2', '2021-02-26 02:09:01', '2021-02-26 6:09:01'),
+('Sprite', '8oz sprite', 'pic3.png', '0.99', '500', '1','3', '2021-02-26 02:09:01', '2021-02-26 6:09:01'),
+('Fries', 'Perfect Fries', 'pic3.png', '2.99', '500', '1','8', '2021-02-26 02:09:01', '2021-02-26 6:09:01'),
+('Chocolat Chip Cookies', 'cookie', 'pic3.png', '2.50', '500', '1','1', '2021-02-26 02:09:01', '2021-02-26 6:09:01');
+
+
 
 -- ('salmon', '1 piece sashimi', 'pic4.png', '2.99', '500', '2', '2021-02-26 02:09:01', '2021-02-26 6:09:01'),
 -- ('tuna', '1 piece sashimi', 'pic5.png', '3.99', '500', '2', '2021-02-26 02:09:01', '2021-02-26 6:09:01'),

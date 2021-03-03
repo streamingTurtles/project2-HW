@@ -1,6 +1,6 @@
 
 
-# Project Title: Project #2
+# Project Title: Project #2 - yourEats
     
   ## Table of Contents:
 
@@ -18,20 +18,20 @@
   - [Project Usage Information](#project-usage-information)
   - [Contribution Guidelines](#contribution-guidelines)
   - [Testing Instructions](#testing-instructions)
-  - [License Type](#license-type)
-  - [Github Repo Link](#github-repo-link)
-  - [HEROKU Live APP Link](https://radiant-springs-30491.herokuapp.com/)
-  - [Github Information](#github-information)
-  - [my-email-us-questions-and-information](#my-email-for-questions-and-information)
+  - [Github Repo Link](https://github.com/streamingTurtles/project2-HW)
+  - [HEROKU Live APP Link](https://radiant-oasis-56969.herokuapp.com/login)
+  - [Presentation](https://docs.google.com/presentation/d/11LK9C5VG8Ut8FWZdR-yGGSNjS9RFrwrX1jXMV-3S6hk/edit#slide=id.p)
+ 
 
 
 
   - - -
   ## Screenshot of Initial wireFrame design for "yourEats" application:
-  ![Screenshot](public/assets/img/Page_1.png)
-  ![Screenshot](public/assets/img/Page_1andhalf.png)
-  ![Screenshot](public/assets/img/Page_2_Bottom.png)
-  ![Screenshot](public/assets/img/Page_2_Top.png)
+  ![Screenshot](public/images/Page_1.png)
+  ![Screenshot](public/images/Page_1andhalf.png)
+  ![Screenshot](public/images/Page_2_Top.png)
+  ![Screenshot](public/images/Page_2_Bottom.png)
+
 
 
 
@@ -42,12 +42,12 @@
   &nbsp;
   - - -
   ## Project Description:
-  - This is a group project-2.....
+  - This is a group project-2, that developed a menu app for some of your favorite foods.
 
   &nbsp;
   - - -
   ## Installation Instructions:
-  - The user only has to follow the Heroku Deployed Application link https://radiant-springs-30491.herokuapp.com/  or can run the application locally from the terminal by first running >npm i to get all dependencies and then to begin the app, type:  >node server.js  and the burger app will open in the browser.
+  - The user only has to follow the Heroku Deployed Application link https://radiant-oasis-56969.herokuapp.com/login  or can run the application locally from the terminal by first running >npm i to get all dependencies and then to begin the app, type:  >node server.js  and the burger app will open in the browser.
 
   &nbsp;
   - - -
