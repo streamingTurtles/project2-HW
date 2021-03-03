@@ -1,6 +1,6 @@
 
 
-# Project Title: Project #2
+# yourEats: Project #2
     
   ## Table of Contents:
 
