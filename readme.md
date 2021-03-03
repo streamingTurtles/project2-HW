@@ -19,7 +19,7 @@
   - [Contribution Guidelines](#contribution-guidelines)
   - [Github Repo Link](https://github.com/streamingTurtles/project2-HW)
   - [HEROKU Live APP Link](https://radiant-springs-30491.herokuapp.com/)
-  - [Team](#contribution-giudelines)
+  - [Team](#team)
 
 
 
@@ -50,7 +50,7 @@
 
   &nbsp;
   - - -
-  ## Contribution Guidelines:
+  ## Team:
 
 - - -
 Rajahni Fields, Natalia Carvajal, Margaret Elson, Peter Cardillo, - Project #2, Columbia Engineering Fullstack Bootcamp, 2020-2021  
