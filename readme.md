@@ -17,21 +17,15 @@
   - [Installation Instructions](#installation-instructions)
   - [Project Usage Information](#project-usage-information)
   - [Contribution Guidelines](#contribution-guidelines)
-  - [Testing Instructions](#testing-instructions)
-  - [License Type](#license-type)
-  - [Github Repo Link](#github-repo-link)
+  - [Github Repo Link](https://github.com/streamingTurtles/project2-HW)
   - [HEROKU Live APP Link](https://radiant-springs-30491.herokuapp.com/)
-  - [Github Information](#github-information)
-  - [my-email-us-questions-and-information](#my-email-for-questions-and-information)
+  - [my-email-us-questions-and-information](#contribution-gidelines)
 
 
 
   - - -
   ## Screenshot of Initial wireFrame design for "yourEats" application:
-  ![Screenshot](public/assets/img/Page_1.png)
-  ![Screenshot](public/assets/img/Page_1andhalf.png)
-  ![Screenshot](public/assets/img/Page_2_Bottom.png)
-  ![Screenshot](public/assets/img/Page_2_Top.png)
+  <img width="1440" alt="Screen Shot 2021-03-02 at 8 49 39 PM" src="https://user-images.githubusercontent.com/73186966/109740163-d4c72b00-7b98-11eb-8f47-878e89b476ab.png">
 
 
 
@@ -42,7 +36,7 @@
   &nbsp;
   - - -
   ## Project Description:
-  - This is a group project-2.....
+  - yourEats is a customizable food service application where the user is one click away from there "usual" order at their favorite restaurant.Our application can be personalized to the user when they log-in and can retain the memory of any notes the user wants to add to their customized order. Want your food dropped off with the doorman? The delivery man will know. You like extra ketchup packets? The kitchen will know. This application will make ordering your favorite foods easier than ever!
 
   &nbsp;
   - - -
@@ -58,6 +52,5 @@
   - - -
   ## Contribution Guidelines:
 
-- - -
 - - -
 Rajahni Fields, Natalia Carvajal, Margaret Elson, Peter Cardillo, - Project #2, Columbia Engineering Fullstack Bootcamp, 2020-2021  
