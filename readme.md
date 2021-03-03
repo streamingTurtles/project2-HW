@@ -19,7 +19,7 @@
   - [Contribution Guidelines](#contribution-guidelines)
   - [Github Repo Link](https://github.com/streamingTurtles/project2-HW)
   - [HEROKU Live APP Link](https://radiant-springs-30491.herokuapp.com/)
-  - [my-email-us-questions-and-information](#contribution-gidelines)
+  - [Team](#contribution-giudelines)
 
 
 
