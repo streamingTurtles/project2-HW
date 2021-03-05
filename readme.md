@@ -41,7 +41,8 @@
   &nbsp;
   - - -
   ## Installation Instructions:
-  - The user only has to follow the Heroku Deployed Application link https://radiant-springs-30491.herokuapp.com/  or can run the application locally from the terminal by first running >npm i to get all dependencies and then to begin the app, type:  >node server.js  and the burger app will open in the browser.
+  - The user only has to follow the Heroku Deployed Application link  https://radiant-oasis-56969.herokuapp.com/
+  or can run the application locally from the terminal by first running >npm i to get all dependencies and then to begin the app, type:  >node server.js  and the burger app will open in the browser.
 
   &nbsp;
   - - -
